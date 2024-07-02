@@ -22,4 +22,4 @@ RUN npm install pm2 -g
 EXPOSE 5432
 EXPOSE 3000
 
-CMD service postgresql start && pm2 start dist/main.js --name "nest-app" --no-daemon
+CMD service postgresql start && pm2-runtime start ecosystem.config.js
